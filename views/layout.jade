@@ -3,17 +3,18 @@ html(ng-app="myApp")
   head
     title Cat
     link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css")
-    link(rel="stylesheet", href='/stylesheets/flat-ui.css')
+    link(rel='stylesheet', href='/stylesheets/flat-ui.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='//code.jquery.com/jquery-1.10.2.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js')
+  body
+    block content
+    script(src="//code.jquery.com/jquery-1.10.2.min.js")
     script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js")
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.min.js')
+
     script(src='/javascripts/app.js')
     script(src='/javascripts/controllers.js')
     script(src='/javascripts/directives.js')
     script(src='/javascripts/filters.js')
     script(src='/javascripts/services.js')
-  body
-    div.container
-      block content
