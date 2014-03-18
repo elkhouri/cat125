@@ -8,15 +8,13 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {templateUrl: 'templates/home.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/about', {templateUrl: 'templates/about.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/accessibility', {templateUrl: 'templates/accessibility.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/user', {templateUrl: 'templates/user.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/environment', {templateUrl: 'templates/environment.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/affordance', {templateUrl: 'templates/affordance.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/color-shape', {templateUrl: 'templates/color-shape.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/hierarchy', {templateUrl: 'templates/hierarchy.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/links', {templateUrl: 'templates/links.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/home', {templateUrl: 'templates/home.html', controller: 'HomeCtrl'});
+  $routeProvider.when('/about', {templateUrl: 'templates/about.html', controller: 'AboutCtrl'});
+  $routeProvider.when('/navigation', {templateUrl: 'templates/navigation.html', controller: 'NavCtrl'});
+  $routeProvider.when('/misconception', {templateUrl: 'templates/misconception.html', controller: 'MiscCtrl'});
+  $routeProvider.when('/article', {templateUrl: 'templates/article.html', controller: 'ArticleCtrl'});
+  $routeProvider.when('/layout', {templateUrl: 'templates/layout.html', controller: 'LayoutCtrl'});
+  $routeProvider.when('/links', {templateUrl: 'templates/links.html', controller: 'LinkCtrl'});
 
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);

@@ -5,3 +5,14 @@
 	margin-top: 30px;
 	padding-bottom: 0px;
 }
+.center-block {
+	float: none !important;
+}
+.flip-horizontal {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
